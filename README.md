@@ -1,4 +1,4 @@
 simply run
 
-> npm install
-> gulp
+$ npm install
+$ gulp
