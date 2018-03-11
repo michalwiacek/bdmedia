@@ -1,0 +1,19 @@
+mixin nav-content()
+  ul
+    li: a(href='#home') Home
+    li: a(href='#about') O nas
+    li: a(href='#gallery') Galeria
+    li: a(href='#offer') Oferta
+    li: a(href='#contact') Kontakt
+.mobile-nav
+  +nav-content()
+
+
+
+section.header#header
+    .logo
+    nav.site-nav
+        +nav-content()
+    .wrap-menu
+        .menu-label Menu 
+        .mobile-nav-toggle: span

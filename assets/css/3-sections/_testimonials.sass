@@ -1,0 +1,130 @@
+section.testimonials
+  order: 0
+.t-wrap
+  width: 100vw
+  min-height: 220px
+  height: 33vh
+  max-height: 300px
+  background: $project-blue
+  margin: 10em 0
+  overflow: hidden
+  > input
+    display: none
+
+.t-content
+  margin: 0
+  padding: 0
+  width: calc(100% * 3)
+  height: 100%
+  list-style: none
+  transition: transform 1s
+  animation: slider-animation 50s ease-in-out infinite
+.t-content
+  &:hover 
+    animation-play-state: paused
+.t-item
+  display: inline-flex
+  width: calc(100% / 3)
+  height: 100%
+  background-repeat: no-repeat
+  background-size: cover
+.t-type-1
+  .t-control
+    position: relative
+    bottom: 28px
+    left: 50%
+    text-align: center
+    transform: translateX(-50%)
+    transition-timing-function: ease-out
+    > label[class^="s-c-"]
+      display: none
+      width: 12px
+      height: 12px
+      margin-right: 10px
+      border-radius: 50%
+      border: 1px solid #999
+      background-color: #efefe8
+      cursor: pointer
+  .t-nav label
+      display: none
+      position: absolute
+      padding: 5px 10px
+      transform: translateY(-50%)
+      cursor: pointer
+      z-index: 40
+      &::before,
+      &::after
+        content: ""
+        display: block
+        width: 8px
+        height: 24px
+        background-color: #fff
+      &::before
+        margin-bottom: -12px
+      &.left
+        left: 20px
+        &::before
+          transform: rotate(45deg)
+        &::after
+          transform: rotate(-45deg)
+      &.right
+        right: 20px
+        &::before
+          transform: rotate(-45deg)
+        &::after
+          transform: rotate(45deg)
+  @for $i from 1 through 3
+    #t-#{$i}:checked
+      & ~ .t-content 
+        transform: translateX(-100%/3 * ($i - 1))
+      & ~ .t-control .t-c-#{$i} 
+        background-color: #333
+      & ~ .t-nav .t-nav-#{$i} 
+        display: block
+
+  .wrap-testi
+    display: flex
+    flex-direction: row
+    justify-content: center
+    margin: 1em 14em
+
+  #testi
+    width: 150px
+    max-width: 300px
+    border-radius: 400px
+    box-shadow: 0px 4px 15px -2px $project-darkblue
+  .wrap-testi-text
+    margin: 2em 3em
+
+@keyframes slider-animation 
+  $i: 0;
+  $j: 0;
+  $times: (3 - 1) * 2;
+  @while $i < 100 
+    #{$i}%,
+    #{$i + 7}% 
+      @if $i < 50 
+        transform: translateX(-33.3% * $j)
+      @else 
+        transform: translateX(-33.3% * ($times - $j))
+    $i: $i + 100 / $times;
+    $j: $j + 1;
+  
+@media (max-width: 1000px)
+  .wrap-testi
+    margin: 1em 5em !important
+  .wrap-testi-text
+    margin: 1em 1em !important
+
+@media (max-width: 663px)
+  .wrap-testi
+    margin: 1em 3em !important
+  .wrap-testi-text
+    margin: 1em 1em !important
+
+@media (max-width: 368px)
+  .wrap-testi
+    margin: 0em 0em !important
+  .wrap-testi-text
+    margin: 0em 0em !important
+

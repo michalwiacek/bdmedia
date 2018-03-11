@@ -1,0 +1,26 @@
+section.map
+  flex-direction: column
+  justify-content: center
+  height: 100vh
+  width: 70%
+  h2
+    margin-left: 3em
+    visibility: hidden
+    backgorund: $bg-color
+  .wrap-map
+    margin: 0
+    height: 80vh
+    padding: 5px
+    filter: drop-shadow(15px 15px 20px darken($japanese-indigo, 8%) )
+    -webkit-transition: 0.3s ease-in-out !important
+    -webkit-transition-transition: 0.2s ease-in-out !important
+@media (max-width: 663px)
+  section.map
+    width: 100vw
+    height: 80vh
+    .wrap-map
+      margin: auto 0
+    h2
+      display: none
+      font-size: 1.6rem
+      margin-left: 0.5em

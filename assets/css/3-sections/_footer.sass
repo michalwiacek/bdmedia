@@ -1,0 +1,57 @@
+section.footer
+  display: flex
+  flex-direction: row
+  justify-content: center
+  background: linear-gradient(to top right, (darken($project-darkblue, 8%), lighten($project-darkblue, 8%)))
+
+.wrap-footer
+  display: flex
+  flex-direction: row
+  justify-content: center
+  width: 80vw
+.footer-nav
+  display: flex
+  flex-direction: column
+  justify-content: center
+  align-content: center
+  width: 50%
+  nav
+    margin: auto
+  ul li
+    list-style-type: none
+    font: 
+      size: 20px
+    line-height: 2.3em
+.footer-content
+  flex-direction: column
+  width: 50%
+  p
+    padding: 4em 9em
+.footer-white
+  display: flex
+  justify-content: center
+  height: 3em
+  width: 100vw
+  background: white
+  p 
+    color: $project-darkblue
+    padding: 0
+    margin: auto
+@media (max-width: 1000px)
+  .footer-content
+    p
+      padding: 1em 3em
+@media (max-width: 663px)
+  .wrap-footer
+    flex-direction: column !important
+    justify-content: center !important
+    width: 100vw 
+  .footer-content
+    width: 100vw 
+    p
+      font-size: 2em
+      padding: 4em
+  .footer-nav
+    width: 100vw
+    ul li
+      font-size: 3em
