@@ -1330,7 +1330,7 @@ section.footer {
 
 .bg {
   position: absolute;
-  background: linear-gradient(to left, rgba(0, 0, 0, 0.85), transparent), url("assets/img/bg.png") no-repeat;
+  background: linear-gradient(to left, rgba(0, 0, 0, 0.85), transparent), url("./assets/img/bg.png") no-repeat;
   background-size: cover;
   width: 100vw;
   height: 120vh;
