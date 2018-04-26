@@ -1,4 +1,5 @@
 var gulp        = require('gulp');
+var deploy      = require('gulp-gh-pages');
 var browserSync = require('browser-sync');
 var sass        = require('gulp-sass');
 var prefix      = require('gulp-autoprefixer');
@@ -10,7 +11,13 @@ var messages = {
     jekyllBuild: '<span style="color: grey">Running:</span> $ jekyll build'
 };
 
-
+/**
+ * Push build to gh-pages
+ */
+gulp.task('deploy', function (){
+    return gulp.src("./dist/**/*")
+    .pipe(deploy())
+});
 /**
  * Build the Jekyll Site
  */
