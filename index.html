@@ -1,20 +1,34 @@
----
-layout: default
-title: BD Media
----
-
-<div class="home-wrap">
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="utf-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <title>BD Media</title>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" href="/assets/css/main.css">
+        
+        <script src="//code.jquery.com/jquery-2.1.3.min.js"></script>
+    </head>
+    <body>
+        <div class="home-wrap">
   <div class="bg"></div>
-  {% include header.html %}
+  <div class="mobile-nav"><ul><li><a href="#home">Home</a></li><li><a href="#about">O nas</a></li><li><a href="#gallery">Galeria</a></li><li><a href="#offer">Oferta</a></li><li><a href="#contact">Kontakt</a></li></ul></div><section class="header" id="header"><div class="logo"></div><nav class="site-nav"><ul><li><a href="#home">Home</a></li><li><a href="#about">O nas</a></li><li><a href="#gallery">Galeria</a></li><li><a href="#offer">Oferta</a></li><li><a href="#contact">Kontakt</a></li></ul></nav><div class="wrap-menu"><div class="menu-label">Menu </div><div class="mobile-nav-toggle"><span></span></div></div></section>
   <div class="home-sections">
-    {% include home.html %}
-    {% include about.html %}
+    <section class="home"><div class="wrap-home"><div class="wrap-logo"><img id="logo" src="assets/img/logo-white.svg" alt="logo"/></div><p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Deserunt, id et provident asperiores odit beatae quod enim animi, esse earum in voluptatum sunt soluta error ad placeat, itaque inventore nemo!</p></div></section>
+    <section class="about" id="about"><div class="s-wrap s-type-1" role="slider"><input id="s-1" type="radio" name="slider-control" checked="checked"/><input id="s-2" type="radio" name="slider-control"/><input id="s-3" type="radio" name="slider-control"/><ul class="s-content"><li class="s-item s-item-1"><div class="wrap-item"><h3> Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod  ncidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci ta on ullamcorper suscipit lobor s nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure</p><button>Czytaj więcej</button></div></li><li class="s-item s-item-2"><div class="wrap-item"><h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod  ncidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci ta on ullamcorper suscipit lobor s nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure</p><button>Czytaj więcej</button></div></li><li class="s-item s-item-3"><div class="wrap-item"><h3>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h3><p>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod  ncidunt ut laoreet dolore magna aliquam erat volutpat. Ut wisi enim ad minim veniam, quis nostrud exerci ta on ullamcorper suscipit lobor s nisl ut aliquip ex ea commodo consequat. Duis autem vel eum iriure</p><button>Czytaj więcej</button></div></li></ul><div class="s-control"><label class="s-c-1" for="s-1"></label><label class="s-c-2" for="s-2"></label><label class="s-c-3" for="s-3"></label></div><div class="s-nav"><label class="s-nav-1 right" for="s-2"></label><label class="s-nav-1 left" for="s-3"></label><label class="s-nav-2 left" for="s-1"></label><label class="s-nav-2 right" for="s-3"></label><label class="s-nav-3 left" for="s-2"></label><label class="s-nav-3 right" for="s-1"></label></div></div></section>
   </div>
   <div class="offer-sections">
-  {% include offer.html %}
+  <section class="offer"><card><img src="/assets/img/Ikona_medal.svg" alt="medal" height="90"/><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis quibusdam, eum minus ab consequuntur animi officiis illum neque odio quae temporibus voluptate omnis ratione modi, voluptas quas rem repudiandae maxime.</p></card><card><img src="/assets/img/Ikona_puchar.svg" alt="puchar" height="90"/><p>Lorem ipsum dolor sit amet consectetur, adipisicing elit. Nobis quibusdam, eum minus ab consequuntur animi officiis illum neque odio quae temporibus voluptate omnis ratione modi, voluptas quas rem repudiandae maxime.</p></card></section>
   </div>
 
-  {% include testimonials.html %}
-  {% include contact.html %}
-  {% include footer.html %}
+  <section class="testimonials"><div class="t-wrap t-type-1" role="slider"><input id="t-1" type="radio" name="slider-control" checked="checked"/><input id="t-2" type="radio" name="slider-control"/><input id="t-3" type="radio" name="slider-control"/><ul class="t-content"><li class="t-item t-item-1"><div class="wrap-testi"><div class="testi-img"><img id="testi" src="/assets/img/testimonial1.png" alt="testimonial"/></div><div class="wrap-testi-text"><h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h4><em>Jan Kowalski</em></div></div></li><li class="t-item t-item-2"><div class="wrap-testi"><div class="testi-img"><img id="testi" src="/assets/img/testimonial1.png" alt="testimonial"/></div><div class="wrap-testi-text"><h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h4><em>Jan Kowalski</em></div></div></li><li class="t-item t-item-3"><div class="wrap-testi"><div class="testi-img"><img id="testi" src="/assets/img/testimonial1.png" alt="testimonial"/></div><div class="wrap-testi-text"><h4>Lorem ipsum dolor sit amet, consectetuer adipiscing elit, sed diam nonummy nibh euismod</h4><em>Jan Kowalski</em></div></div></li></ul></div></section>
+  <section class="contact" id="contact"><div class="bg-bottom"></div><div class="wrap-contact"><h2>Masz Pytania? Skontaktuj się z nami!</h2><div class="container"><div class="logo-contact"></div></div></div><div class="wrap-form"><form action="" method="post"><fieldset><input id="name" type="text" name="name" placeholder="Imię"/></fieldset><fieldset><input id="email" type="text" name="email" placeholder="e-mail"/></fieldset><fieldset><textarea id="message" name="message" placeholder="Wiadomośc" cols="20" rows="8"></textarea></fieldset><fieldset><button type="submit">Wyślij</button></fieldset></form></div></section>
+  <section class="footer"><div class="wrap-footer"><div class="footer-nav"><nav><ul><li><a href="#home">Home</a></li><li><a href="#about">O nas</a></li><li><a href="#gallery">Galeria</a></li><li><a href="#offer">Oferta</a></li><li><a href="#contact">Kontakt</a></li></ul></nav></div><div class="footer-content"><p>Michał Wiącek <br><br> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Minima, omnis ipsa repellat doloremque aperiam repudiandae fugit atque</p></div></div></section><div class="footer-white"> <p>Wszelkie prawa zastrzeżone</p></div>
 </div>
+        
+        <script src="/assets/js/functions.js"></script>
+    
+    
+    </body>
+
+</html>
